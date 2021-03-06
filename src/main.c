@@ -18,6 +18,47 @@ char* guilds[] =
   , "Whitill"
   };
 
+// https://www.ign.com/faqs/2003/phantasy-star-online-episode-i-ii-section-id-faq-cube-394893
+char* recommendations[] =
+  { "Ranger"
+  , "Ranger"
+  , "Hunter"
+  , "Hunter"
+  , "Ranger"
+  , "Force"
+  , "Any"
+  , "Hunter"
+  , "Any"
+  , "Hunter"
+  };
+
+// http://www.pso-world.com/sections.php?op=viewarticle&artid=452
+char* common_drops[] =
+  { "Shot (11%), Partisans (10%)"
+  , "Rifles (13%), Daggers (10%)"
+  , "Swords (13%), Rifles (10%)"
+  , "Partisans (13%), Rods (10%)"
+  , "Machineguns (13%), Daggers (10%)"
+  , "Wands (13%), Partisans (10%)"
+  , "Slicers (10%)"
+  , "Daggers (13%)"
+  , "None"
+  , "Slicers (13%), Machineguns (10%)"
+  };
+
+char* rare_drops[] =
+  { "Slicers (1%)"
+  , "Swords (1%)"
+  , "Machineguns (1%)"
+  , "Wands (1%)"
+  , "Swords (3%), Partisans (3%)"
+  , "Rifles (1%)"
+  , "Daggers (1%)"
+  , "Rods (1%)"
+  , "None"
+  , "Shot (1%)"
+  };
+
 void print_usage( )
 {
   printf( "placeholder\n" );
@@ -64,8 +105,11 @@ int main( int argc, char **argv )
 
   int id = calculate_section_id( argv[ 1 ] );
 
-  printf( "Section id: %d\n", id );
-  printf( "Guild     : %s\n", guilds[ id ] );
+  printf( "Section ID   : %d\n", id                    );
+  printf( "Guild        : %s\n", guilds[ id ]          );
+  printf( "Good for     : %s\n", recommendations[ id ] );
+  printf( "Common drops : %s\n", common_drops[ id ]    );
+  printf( "Rare drops   : %s\n", rare_drops[ id ]      );
 
   return 0;
 }
