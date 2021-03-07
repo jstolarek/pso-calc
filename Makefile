@@ -5,6 +5,7 @@ CFLAGS       := -Wextra
 # Directories
 SRCDIR       := src
 BUILDDIR     := build
+INSTALLDIR   := /usr/local/bin/
 
 # Files to compile.
 SRCS         := $(wildcard $(SRCDIR)/*.c)
@@ -24,8 +25,14 @@ $(ELFTARGET): $(BUILDDIR) $(SRCS)
 $(BUILDDIR):
 	mkdir build
 
+install: $(ELFTARGET)
+	cp $(ELFTARGET) $(INSTALLDIR)
+
+uninstall:
+	rm $(INSTALLDIR)/$(ELFTARGET)
+
 clean:
 	rm -f $(ELFTARGET) $(OBJS)
 	rmdir build
 
-.PHONY: all clean run
+.PHONY: all clean install uninstall
