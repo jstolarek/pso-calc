@@ -24,9 +24,11 @@ MAG type     : B
 
 The result tells you which guild a character with this name will be assigned to,
 what character class will work well with this name, which drops are the most
-common and which are the most rare.  Note that all character classes have a 13%
-drop chance for Sabers, Handguns, and Canes, so these are not listed in the
-result.
+common, which are the most rare, and which class of MAGs to expect.  Note that
+all character classes have a 13% drop chance for Sabers, Handguns, and Canes, so
+these are not listed in the result.  Consult [this MAG
+list](http://www.pso-world.com/sections.php?op=viewarticle&artid=1016) to
+interpret the "MAG type" result.
 
 Character name passed as argument can only contain ASCII characters and may be
 at most 12 characters long.  If the name contains spaces wrap it in quotes like
