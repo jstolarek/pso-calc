@@ -125,6 +125,7 @@ int main( int argc, char **argv )
   printf( "Good for     : %s\n", recommendations[ id ] );
   printf( "Common drops : %s\n", common_drops[ id ]    );
   printf( "Rare drops   : %s\n", rare_drops[ id ]      );
+  printf( "MAG type     : %c\n", id % 2 ? 'B' : 'A'    );
 
   return 0;
 }
