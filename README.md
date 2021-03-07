@@ -46,21 +46,21 @@ MAG type     : B
 Drop rates
 ==========
 
-Below is a table with drop frequencies for all classes (reproduced from
+Below is a table with drop frequencies for all guilds (reproduced from
 [here](http://www.pso-world.com/secprint.php?artid=452)).
 
-| Section ID | Sabers | Swords | Daggers | Partisans | Slicers | Handguns | Rifle  | Machineguns | Shotguns | Canes | Rods   | Wands  |
-|------------|--------|--------|---------|-----------|---------|----------|--------|-------------|----------|-------|--------|--------|
-| Viridia    | 13     | 6      | 7       | **10**    | *1*     | 13       | 6      | 6           | **11**   | 13    | 7      | 7      |
-| Greennill  | 13     | *1*    | **10**  | 6         | 6       | 13       | **13** | 7           | 4        | 13    | 7      | 7      |
-| Skyly      | 13     | **13** | 7       | 6         | 6       | 13       | **10** | *1*         | 4        | 13    | 7      | 7      |
-| Bluefull   | 13     | 7      | 6       | **13**    | 6       | 13       | 7      | 7           | 4        | 13    | **10** | *1*    |
-| Purplenum  | 13     | 3      | **10**  | 3         | 6       | 13       | 7      | **13**      | 5        | 13    | 7      | 7      |
-| Pinkal     | 13     | 6      | 7       | **10**    | 6       | 13       | *1*    | 7           | 4        | 13    | 7      | **13** |
-| Redria     | 13     | 7      | *1*     | 7         | **10**  | 13       | 7      | 7           | 8        | 13    | 7      | 7      |
-| Oran       | 13     | 8      | **13**  | 7         | 6       | 13       | 7      | 7           | 4        | 13    | *1*    | 8      |
-| Yellowboze | 13     | 7      | 7       | 7         | 7       | 13       | 7      | 7           | 5        | 13    | 7      | 7      |
-| Whitill    | 13     | 6      | 6       | 6         | **13**  | 13       | 6      | **10**      | *1*      | 13    | 7      | 6      |
+| Section ID     | Sabers | Swords | Daggers | Partisans | Slicers | Handguns | Rifle  | Machineguns | Shotguns | Canes | Rods   | Wands  |
+|----------------|--------|--------|---------|-----------|---------|----------|--------|-------------|----------|-------|--------|--------|
+| **Viridia**    | 13     | 6      | 7       | **10**    | *1*     | 13       | 6      | 6           | **11**   | 13    | 7      | 7      |
+| **Greennill**  | 13     | *1*    | **10**  | 6         | 6       | 13       | **13** | 7           | 4        | 13    | 7      | 7      |
+| **Skyly**      | 13     | **13** | 7       | 6         | 6       | 13       | **10** | *1*         | 4        | 13    | 7      | 7      |
+| **Bluefull**   | 13     | 7      | 6       | **13**    | 6       | 13       | 7      | 7           | 4        | 13    | **10** | *1*    |
+| **Purplenum**  | 13     | 3      | **10**  | 3         | 6       | 13       | 7      | **13**      | 5        | 13    | 7      | 7      |
+| **Pinkal**     | 13     | 6      | 7       | **10**    | 6       | 13       | *1*    | 7           | 4        | 13    | 7      | **13** |
+| **Redria**     | 13     | 7      | *1*     | 7         | **10**  | 13       | 7      | 7           | 8        | 13    | 7      | 7      |
+| **Oran**       | 13     | 8      | **13**  | 7         | 6       | 13       | 7      | 7           | 4        | 13    | *1*    | 8      |
+| **Yellowboze** | 13     | 7      | 7       | 7         | 7       | 13       | 7      | 7           | 5        | 13    | 7      | 7      |
+| **Whitill**    | 13     | 6      | 6       | 6         | **13**  | 13       | 6      | **10**      | *1*      | 13    | 7      | 6      |
 
 
 Building from source
