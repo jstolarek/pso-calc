@@ -34,7 +34,7 @@ char* recommendations[] =
 
 // http://www.pso-world.com/sections.php?op=viewarticle&artid=452
 char* common_drops[] =
-  { "Shot (11%), Partisans (10%)"
+  { "Shotguns (11%), Partisans (10%)"
   , "Rifles (13%), Daggers (10%)"
   , "Swords (13%), Rifles (10%)"
   , "Partisans (13%), Rods (10%)"
@@ -56,12 +56,15 @@ char* rare_drops[] =
   , "Daggers (1%)"
   , "Rods (1%)"
   , "None"
-  , "Shot (1%)"
+  , "Shotguns (1%)"
   };
 
 void print_usage( )
 {
-  printf( "placeholder\n" );
+  printf( "Phantasy Star Online section ID calculator v1.0\n" );
+  printf( "\n"                                                );
+  printf( "Usage: pso-calc <name>\n"                          );
+  printf( "\n"                                                );
 }
 
 void assert_name_valid( char* name )
@@ -69,12 +72,16 @@ void assert_name_valid( char* name )
   int i = 0;
   while( name[ i ] ) {
     if ( i == 12 ) {
-      fprintf( stderr, "Name too long\n" );
+      print_usage( );
+      fprintf( stderr, "pso-calc error: name too long, names cannot be longer "
+                       "than 12 characters\n" );
       exit( ERROR_NAME_TOO_LONG );
     }
 
     if ( name[ i ] < 32 || name[ i ] > 126 ) {
-      fprintf( stderr, "Invalid character: %c\n", name[ i ] );
+      print_usage( );
+      fprintf( stderr, "pso-calc error: only ASCII characters allowed "
+                       "in name\n" );
       exit( ERROR_INVALID_CHAR );
     }
     i++;
@@ -96,8 +103,16 @@ int calculate_section_id( char* name )
 
 int main( int argc, char **argv )
 {
-  if ( argc != 2 ) {
+  if ( argc == 1 ) {
     print_usage( );
+    fprintf( stderr, "pso-calc error: missing argument\n" );
+    exit( ERROR_WRONG_NO_OF_ARGS );
+  }
+
+  if ( argc > 2 ) {
+    print_usage( );
+    fprintf( stderr, "pso-calc error: too many arguments, put names containing "
+                     "spaces in quotes\n" );
     exit( ERROR_WRONG_NO_OF_ARGS );
   }
 
